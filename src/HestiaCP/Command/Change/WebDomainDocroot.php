@@ -19,7 +19,7 @@ class WebDomainDocroot extends ProcessCommand
 	/** @var string */
 	private $directory;
 
-	public function __construct(string $user, string $domain, string $target_domain, string $directory)
+	public function __construct(string $user, string $domain, string $target_domain, string $directory = null)
 	{
 		$this->user = $user;
 		$this->domain = $domain;
@@ -38,7 +38,7 @@ class WebDomainDocroot extends ProcessCommand
 			self::ARG_1 => $this->user,
 			self::ARG_2 => $this->domain,
 			self::ARG_3 => $this->target_domain,
-			self::ARG_4 => $this->directory
+			self::ARG_4 => $this->directory ?? ''
 		];
 	}
 }
