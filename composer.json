@@ -5,7 +5,7 @@
     "require": {
         "php": "^8.0",
         "guzzlehttp/guzzle": "^7.0",
-        "nette/utils": "^3.2"
+        "nette/utils": "^4.0"
     },
     "homepage": "https://github.com/ponasromas/HestiaCP-API",
     "license": "MIT",
