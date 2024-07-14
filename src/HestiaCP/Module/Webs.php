@@ -345,7 +345,7 @@ class Webs extends Module
 	 * @throws \HestiaCP\ClientException
 	 * @throws \HestiaCP\ProcessException
 	 */
-	public function changeDomainDocroot(string $domain, string $target_domain = null, string $directory = 'default'): bool
+	public function changeDomainDocroot(string $domain, string $target_domain = null, string $directory = null): bool
 	{
 		return $this->client->send(new WebDomainDocroot($this->user, $domain, $target_domain, $directory));
 	}
